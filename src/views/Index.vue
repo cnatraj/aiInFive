@@ -16,9 +16,9 @@
 <script setup>
 import { ref, computed, onMounted } from "vue";
 import { supabase } from "@/lib/supabase";
-import TopNav from "@/components/public/navigation/TopNav.vue";
-import HeroSection from "@/components/public/home/HeroSection.vue";
-import PublicPostsList from "@/components/public/posts/PublicPostsList.vue";
+import TopNav from "@/components/home/navigation/TopNav.vue";
+import HeroSection from "@/components/home/home/HeroSection.vue";
+import PublicPostsList from "@/components/home/posts/PublicPostsList.vue";
 
 // Index page - no authentication required
 

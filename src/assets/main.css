@@ -3,10 +3,25 @@
 
 @import "tailwindcss";
 
-:root {
+@theme {
+  --font-outfit: Outfit, sans-serif;
+
+  --color-brand-25: #f2f7ff;
+  --color-brand-50: #ecf3ff;
+  --color-brand-100: #dde9ff;
+  --color-brand-200: #c2d6ff;
+  --color-brand-300: #9cb9ff;
+  --color-brand-400: #7592ff;
+  --color-brand-500: #465fff;
+  --color-brand-600: #3641f5;
+  --color-brand-700: #2a31d8;
+  --color-brand-800: #252dae;
+  --color-brand-900: #262e89;
+  --color-brand-950: #161950;
+}
+/* :root {
   --font-outfit: "Outfit", sans-serif;
 }
-
 @theme {
   --font-*: initial;
   --font-outfit: Outfit, sans-serif;
@@ -37,6 +52,17 @@
   --text-theme-sm--line-height: 20px;
   --text-theme-xs: 12px;
   --text-theme-xs--line-height: 18px;
+
+  --text-5xl: 48px;
+  --text-5xl--line-height: 1;
+  --text-6xl: 60px;
+  --text-6xl--line-height: 1;
+  --text-7xl: 72px;
+  --text-7xl--line-height: 1;
+  --text-8xl: 96px;
+  --text-8xl--line-height: 1;
+  --text-9xl: 128px;
+  --text-9xl--line-height: 1;
 
   --color-current: currentColor;
   --color-transparent: transparent;
@@ -165,9 +191,25 @@
   --z-index-9999: 9999;
   --z-index-99999: 99999;
   --z-index-999999: 999999;
-}
 
-@layer base {
+  
+  --height-auto: auto;
+  --height-full: 100%;
+  --height-screen: 100vh;
+  --height-fit: fit-content;
+  --height-min: min-content;
+  --height-max: max-content;
+
+  
+  --max-height-none: none;
+  --max-height-full: 100%;
+  --max-height-screen: 100vh;
+  --max-height-fit: fit-content;
+  --max-height-min: min-content;
+  --max-height-max: max-content;
+} */
+
+/* @layer base {
   *,
   ::after,
   ::before,
@@ -186,7 +228,7 @@
     @apply text-brand-500 hover:text-brand-600 dark:text-brand-400;
   }
 
-  /* Custom form input styles */
+  
   .form-input {
     @apply h-11 w-full rounded-lg border border-gray-300 bg-transparent py-2.5 pl-4 pr-11 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-hidden focus:ring-3 focus:ring-brand-500/10;
   }
@@ -194,4 +236,4 @@
   .form-label {
     @apply mb-1.5 block text-sm font-medium text-gray-700;
   }
-}
+} */
