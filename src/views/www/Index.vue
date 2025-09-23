@@ -9,6 +9,8 @@
     <!-- Main Content -->
     <div class="container mx-auto px-4 py-12">
       <PublicPostsList :posts="posts" :loading="loading" :error="error" />
+      <!-- Newsletter Signup -->
+      <NewsletterSignup />
     </div>
   </div>
 </template>
@@ -19,6 +21,7 @@ import { supabase } from "@/lib/supabase";
 import TopNav from "@/components/home/navigation/TopNav.vue";
 import HeroSection from "@/components/home/home/HeroSection.vue";
 import PublicPostsList from "@/components/home/posts/PublicPostsList.vue";
+import NewsletterSignup from "@/components/home/NewsletterSignup.vue";
 
 // Index page - no authentication required
 
@@ -29,9 +32,7 @@ const error = ref(null);
 
 // Extract image URLs for hero cycling
 const heroImages = computed(() =>
-  posts.value
-    .filter(post => post.image_url)
-    .map(post => post.image_url)
+  posts.value.filter((post) => post.image_url).map((post) => post.image_url)
 );
 
 const fetchPublishedPosts = async () => {
