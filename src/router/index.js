@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Index from '@/views/Index.vue'
-import LoginPage from '@/views/LoginPage.vue'
-import Dashboard from '@/views/Dashboard.vue'
-import Posts from '@/views/Posts.vue'
-import Categories from '@/views/Categories.vue'
-import Sources from '@/views/Sources.vue'
+import Index from '@/views/www/Index.vue'
+import LoginPage from '@/views/Auth/LoginPage.vue'
+import Dashboard from '@/views/admin/Dashboard.vue'
+import Posts from '@/views/admin/Posts.vue'
+import Categories from '@/views/admin/Categories.vue'
+import Sources from '@/views/admin/Sources.vue'
 import { supabase } from '@/lib/supabase'
 
 const routes = [
